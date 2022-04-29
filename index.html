@@ -11,6 +11,28 @@
 </head>
 
 <body>
+    <!-- Sprites -->
+    <svg style="display: none;">
+        <symbol id="fb" viewBox="0 0 56.693 56.693">
+            <g>
+                <path
+                    d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z" />
+            </g>
+        </symbol>
+        <symbol id="tw" viewBox="0 0 56.693 56.693">
+            <g>
+                <path
+                    d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z" />
+            </g>
+        </symbol>
+        <symbol id="in" viewBox="0 0 512 512">
+            <g>
+                <path
+                    d="M332.051,176.916c24.504,0,45.362,8.772,62.607,25.707   c14.518,14.82,21.474,36.289,21.474,64.714v163.317h-61.398V322.381c0-29.327-1.511-48.99-3.928-58.676   c-2.717-9.67-7.258-17.231-13.912-22.069c-6.653-5.14-14.818-7.562-24.493-7.562c-12.403,0-23.295,3.935-32.366,12.399   c-9.069,8.47-15.121,19.966-18.744,34.786c-1.822,7.849-2.729,24.485-2.729,50.202v99.192H196.57V182.965h61.992v25.706   c14.215-11.794,26.92-19.961,38.416-24.798C308.464,179.338,319.961,176.916,332.051,176.916L332.051,176.916z M25.701,512h460.89   c13.912,0,25.409-11.48,25.409-25.403V25.706C512,11.491,500.503,0,486.591,0H25.701C11.486,0,0,11.491,0,25.706v460.891   C0,500.519,11.486,512,25.701,512L25.701,512z M135.482,81.35c10.883,0,20.265,3.93,28.128,11.794   c7.862,7.864,11.486,17.539,11.486,28.732c0,10.886-3.624,20.264-11.486,28.123c-7.561,7.864-16.943,11.497-27.826,11.497   s-20.265-3.935-28.127-11.799c-7.862-7.859-11.789-17.54-11.789-29.031c0-10.886,3.926-19.96,11.487-27.825   C115.217,85.28,124.59,81.35,135.482,81.35L135.482,81.35z M104.335,182.965h61.993v247.689h-61.993V182.965z" />
+            </g>
+        </symbol>
+    </svg>
+
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
@@ -46,57 +68,59 @@
             </section>
             <section class="features">
                 <div class="features__container">
-                    <div class="features__column">
-                        <div class="features__item">
-                            <img class="features__icon" src="/img/features/customized.png" alt="Easily Customised">
-                            <h3 class="features__title">Easily Customised</h3>
-                            <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                                Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+                    <div class="features__inner">
+                        <div class="features__column">
+                            <div class="features__item">
+                                <img class="features__icon" src="/img/features/customized.png" alt="Easily Customised">
+                                <h3 class="features__title">Easily Customised</h3>
+                                <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                                    Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="features__column">
-                        <div class="features__item">
-                            <img class="features__icon" src="/img/features/responsive.png" alt="Responsive Ready">
-                            <h3 class="features__title">Responsive REady</h3>
-                            <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                                Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+                        <div class="features__column">
+                            <div class="features__item">
+                                <img class="features__icon" src="/img/features/responsive.png" alt="Responsive Ready">
+                                <h3 class="features__title">Responsive REady</h3>
+                                <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                                    Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="features__column">
-                        <div class="features__item">
-                            <img class="features__icon" src="/img/features/design.png" alt="Moder design">
-                            <h3 class="features__title">Modern Design</h3>
-                            <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                                Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+                        <div class="features__column">
+                            <div class="features__item">
+                                <img class="features__icon" src="/img/features/design.png" alt="Moder design">
+                                <h3 class="features__title">Modern Design</h3>
+                                <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                                    Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="features__column">
-                        <div class="features__item">
-                            <img class="features__icon" src="/img/features/code.png" alt="Clean Code">
-                            <h3 class="features__title">Clean Code</h3>
-                            <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                                Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+                        <div class="features__column">
+                            <div class="features__item">
+                                <img class="features__icon" src="/img/features/code.png" alt="Clean Code">
+                                <h3 class="features__title">Clean Code</h3>
+                                <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                                    Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="features__column">
-                        <div class="features__item">
-                            <img class="features__icon" src="/img/features/ship.png" alt="Ready to Ship">
-                            <h3 class="features__title">Ready to Ship</h3>
-                            <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                                Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+                        <div class="features__column">
+                            <div class="features__item">
+                                <img class="features__icon" src="/img/features/ship.png" alt="Ready to Ship">
+                                <h3 class="features__title">Ready to Ship</h3>
+                                <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                                    Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="features__column">
-                        <div class="features__item">
-                            <img class="features__icon" src="/img/features/download.png" alt="Download for Free">
-                            <h3 class="features__title">Download for Free</h3>
-                            <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                                Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+                        <div class="features__column">
+                            <div class="features__item">
+                                <img class="features__icon" src="/img/features/download.png" alt="Download for Free">
+                                <h3 class="features__title">Download for Free</h3>
+                                <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                                    Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -166,6 +190,147 @@
                     </div>
                 </div>
 
+            </section>
+            <section class="team">
+                <div class="team__container">
+                    <div class="team__inner">
+                        <div class="team__item">
+                            <img src="img/team/team1.jpg" alt="Ruth Woods" class="team__photo">
+                            <div class="team__name">Ruth Woods</div>
+                            <div class="team__prof">Founder, CEO</div>
+                            <div class="team__text">
+                                <p>
+                                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                                    fermentum massa justo sit amet risus.
+                                </p>
+                                <p>
+                                    Maecenas sed diam eget risus varius
+                                    blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu
+                                    leo.
+                                </p>
+                            </div>
+                            <div class="social">
+                                <a href="#" class="social__item" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#fb"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social__item" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#tw"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social__item" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#in"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="team__item">
+                            <img src="img/team/team2.jpg" alt="Timothy Reed" class="team__photo">
+                            <div class="team__name">Timothy Reed</div>
+                            <div class="team__prof">Co-Founder, Developer</div>
+                            <div class="team__text">
+                                <p>
+                                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                                    fermentum massa justo sit amet risus.
+                                </p>
+                                <p>
+                                    Maecenas sed diam eget risus varius
+                                    blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu
+                                    leo.
+                                </p>
+                            </div>
+                            <div class="social">
+                                <a href="#" class="social__item" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#fb"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social__item" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#tw"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social__item" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#in"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="team__item">
+                            <img src="img/team/team3.jpg" alt="Victoria Valdez" class="team__photo">
+                            <div class="team__name">Victoria Valdez</div>
+                            <div class="team__prof">UI Designer</div>
+                            <div class="team__text">
+                                <p>
+                                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                                    fermentum massa justo sit amet risus.
+                                </p>
+                                <p>
+                                    Maecenas sed diam eget risus varius
+                                    blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu
+                                    leo.
+                                </p>
+                            </div>
+                            <div class="social">
+                                <a href="#" class="social__item" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#fb"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social__item" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#tw"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social__item" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#in"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="team__item">
+                            <img src="img/team/team4.jpg" alt="Beverly Little" class="team__photo">
+                            <div class="team__name">Beverly Little</div>
+                            <div class="team__prof">Data Scientist</div>
+                            <div class="team__text">
+                                <p>
+                                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                                    fermentum massa justo sit amet risus.
+                                </p>
+                                <p>
+                                    Maecenas sed diam eget risus varius
+                                    blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu
+                                    leo.
+                                </p>
+                            </div>
+                            <div class="social">
+                                <a href="#" class="social__item" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#fb"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social__item" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#tw"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social__item" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#in"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
 
