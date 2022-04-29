@@ -1,5 +1,5 @@
 /* Font import =========================================== */
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Cardo:regular,italic&display=swap);
 
@@ -129,8 +129,9 @@ body {
     font-family: inherit;
     font-size: 13px;
     font-weight: 600;
-    color: #fff;
     text-transform: uppercase;
+    text-align: center;
+    color: #fff;
 
     border-radius: 2px;
     border: 0;
@@ -146,6 +147,10 @@ body {
 
 .btn_red:hover {
     background-color: #d62c2c;
+}
+
+.btn_long {
+    min-width: 280px;
 }
 
 /* Features ====================================== */
@@ -334,10 +339,29 @@ body {
     transition: all 0.1s linear;
 }
 
-/* Testimonials */
+.social_footer {
+    justify-content: center;
+}
+
+.social_footer .social__item {
+    background-color: transparent;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 2px;
+}
+
+.social_footer .social__item:hover {
+    background-color: #fff;
+}
+
+.social_footer .social__icon {
+    fill: #fff;
+}
+
+/* Reviews ============================================== */
 
 .reviews {
-    background-color: #5c3249;
+    background-color: #53354a;
     overflow: hidden;
 }
 
@@ -383,5 +407,88 @@ body {
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
+    color: #fff;
+}
+
+/* Download ========================================= */
+
+.download {
+    margin: 90px 0;
+    text-align: center;
+}
+
+.download__container {}
+
+.download__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #2d3033;
+    font-family: 300;
+}
+
+.download__text {
+    margin-bottom: 40px;
+    font-size: 13px;
+    color: #2d3033;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Footer ==========================================*/
+
+.footer {
+    background-color: #3a3e64;
+}
+
+.footer__container {}
+
+.footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 0;
+}
+
+.footer__block {
+    flex: 0 1 33.333%;
+    /* padding: 0 15px; */
+    text-align: center;
+}
+
+.footer__title {
+    margin-bottom: 22px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer__address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Copyright ======================================= */
+
+.copyright {
+    padding: 30px 0;
+    background-color: #313454;
+}
+
+.copyright__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #808080;
+}
+
+.copyright__text span {
     color: #fff;
 }
