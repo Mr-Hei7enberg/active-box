@@ -412,12 +412,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 41%;
     padding-left: 80px;
 }
 
 .reviews__text {
-    margin-bottom: 40px;
+    margin: 0 15px 40px 15px;
     font-family: "Cardo", sans-serif;
     font-style: italic;
     font-size: 36px;
@@ -426,6 +426,7 @@ body {
 }
 
 .reviews__author {
+    margin: 0 15px;
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
@@ -593,6 +594,11 @@ body {
 }
 
 /* Media ========================================== */
+@media (max-width: 1440px) {
+    .reviews__content {
+        width: 41%;
+    }
+}
 
 @media (max-width: 1300px) {
     .works__item {
@@ -671,7 +677,8 @@ body {
 
     .reviews__photo {
         width: 100%;
-        margin: 15px 0 40px;
+        /* margin: 15px 0 40px; */
+        margin: 0 0 15px 0;
         overflow: hidden;
     }
 
